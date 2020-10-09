@@ -1,0 +1,25 @@
+body {
+    font-family: 'Montserrat-Light', sans-serif;
+}
+.section {
+    width: 100%;
+    // padding: 100px 80px 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        font-family: "Montserrat-Black", sans-serif;
+        font-size: 36px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $blue;
+        margin-top: 116px;
+        letter-spacing: 0;
+    }
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 15px;
+}

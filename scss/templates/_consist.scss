@@ -1,0 +1,33 @@
+.consist {
+    .section__text {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 790px;
+        margin: 0 auto;
+        margin-bottom: 41px;
+        font-size: 24px;
+    }
+    li {
+        position: relative;
+        display: block;
+        list-style-type: none;
+        // ::before {
+        //     position: absolute;
+        //     content: '';
+        //     background: url(..\image\cheked.svg);
+        //     width: 25px;
+        //     height: 25px;
+        // }
+    }
+    a {
+        text-decoration: none;
+        color: $dark;
+    }
+    &-slide__text {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    
+}

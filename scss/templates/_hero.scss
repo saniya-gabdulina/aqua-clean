@@ -1,0 +1,51 @@
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url(../image/bg-main.jpg) no-repeat ;
+    background-size: cover;
+    // background-position: calc(50% - -23px) 72%;
+    min-height: 140vh;
+    
+    &__title {
+        margin-top: 240px;
+        font-size: 48px;
+        font-weight: 900;
+        color: $secondyellow;
+        span {
+            color: $light;
+            font-weight: normal;
+        }
+    }
+    &__text {
+        font-size: 28px;
+        color: $light;
+        line-height: 174%;
+        margin-top: 44px;
+    }
+    li {
+        
+        position: relative;
+        list-style-type: none;
+        // ::before {
+        //     position: absolute;
+        //     display: block;
+        //     content: '';
+        //     background: url(.\image\cheked.svg);
+        // }
+    }
+    .button {
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        width: 350px;
+        height: 85px;
+        background: $firstyellow;
+        border-radius: 15px;
+        margin-top: 80px;
+        // box-shadow: 0 12px 32px rgba(0, 0, 0, 0.27);
+    }
+}

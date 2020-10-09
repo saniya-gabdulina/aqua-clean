@@ -1,0 +1,29 @@
+.about {
+    position: relative;
+    display: block;
+    background: $lightblue;
+    .section {
+        &__text {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            // padding: 40px 100px 80px;
+            padding-bottom: 120px;
+            padding-left: 140px;
+            max-width: 810px;
+        }
+        &__title {
+            text-align: left;
+            font-size: 24px;
+            text-transform: inherit;
+            margin-top: 80px;
+            span {
+                color: $dark;
+                font-size: 20px;
+                font-weight: 600;
+            }
+         
+        }
+       
+    }
+}
