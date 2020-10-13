@@ -2,27 +2,31 @@
     position: relative;
     display: block;
     background: $lightblue;
-    .section {
-        &__text {
-            display: flex;
-            flex-direction: column;
-            list-style-type: none;
-            // padding: 40px 100px 80px;
-            padding-bottom: 120px;
-            padding-left: 140px;
-            max-width: 810px;
-        }
-        &__title {
-            text-align: left;
-            font-size: 24px;
-            text-transform: inherit;
-            margin-top: 80px;
-            span {
-                color: $dark;
+    // padding-top: 20px;
+    .container {
+        
+    }
+    .card {
+        display: flex;
+        padding-bottom: 65px;
+        &-info {
+            margin-left: 60px;
+            &__title {
+                font-size: 24px;
+                font-weight: 800;
+                color: $blue;
+                padding-bottom: 8px;
+            }
+            &__text {
+                max-width: 810px;
                 font-size: 20px;
                 font-weight: 600;
+                line-height: 200%;
             }
-         
+
+        }
+        img {
+            width: 80px;
         }
        
     }

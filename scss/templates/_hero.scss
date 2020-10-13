@@ -1,14 +1,13 @@
 .hero {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: block;
     background: url(../image/bg-main.jpg) no-repeat ;
     background-size: cover;
     // background-position: calc(50% - -23px) 72%;
-    min-height: 140vh;
-    
+    min-height: 100vh;
+    padding-top: 100px;
     &__title {
-        margin-top: 240px;
+        padding-top: 75px;
         font-size: 48px;
         font-weight: 900;
         color: $secondyellow;
@@ -22,17 +21,24 @@
         color: $light;
         line-height: 174%;
         margin-top: 44px;
+        &-item {
+            position: relative;
+            list-style-type: none;
+            &::before {
+                display: block;
+                position: absolute;
+                content: '';
+                background: url(../image/cheked-light.svg) no-repeat;
+                color: $light;
+                width: 25px;
+                height: 25px;
+                top: 10px;
+                left: -39px;
+            }
+        }
     }
-    li {
-        
-        position: relative;
-        list-style-type: none;
-        // ::before {
-        //     position: absolute;
-        //     display: block;
-        //     content: '';
-        //     background: url(.\image\cheked.svg);
-        // }
+    h1 {
+        margin: 0;
     }
     .button {
         font-size: 24px;
@@ -41,11 +47,15 @@
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
-        width: 350px;
-        height: 85px;
+        width: 300px;
+        height: 75px;
         background: $firstyellow;
         border-radius: 15px;
         margin-top: 80px;
-        // box-shadow: 0 12px 32px rgba(0, 0, 0, 0.27);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.27);
+    }
+    a {
+        text-decoration: none;
+        color: $dark;
     }
 }

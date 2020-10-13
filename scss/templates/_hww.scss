@@ -4,26 +4,33 @@
     padding-top: 20px;
     background: url(../image/hww-bg.jpg) no-repeat;
     background-size: cover;
-    min-height: 530px;
+    max-height: 530px;
+    height: 100%;
     .section__title {
         color: $light;
+        margin-top: 100px;
+    
     }
     .card {
         color: $light;
         display: flex;
         justify-content: space-between;
-        margin-top: 90px;
+        margin-top: 100px;
         &-item {
             text-align: center;
             font-weight: 600;
             &__title {
                 font-size: 24px;
+            
             }
             &__text {
                 max-width: 279px;
                 width: 100%;
                 font-size: 18px;
+                line-height: 200%;
             }
+            
+           
         }
     }
 }

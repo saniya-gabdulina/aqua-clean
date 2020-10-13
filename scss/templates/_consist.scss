@@ -8,18 +8,6 @@
         margin-bottom: 41px;
         font-size: 24px;
     }
-    li {
-        position: relative;
-        display: block;
-        list-style-type: none;
-        // ::before {
-        //     position: absolute;
-        //     content: '';
-        //     background: url(..\image\cheked.svg);
-        //     width: 25px;
-        //     height: 25px;
-        // }
-    }
     a {
         text-decoration: none;
         color: $dark;
@@ -28,6 +16,23 @@
         font-size: 24px;
         font-weight: 600;
         line-height: 140%;
+        li {
+            position: relative;
+            display: block;
+            list-style-type: none;
+            &::before {
+                position: absolute;
+                display: block;
+                content: '';
+                background: url(../image/cheked.svg) no-repeat;
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                color: $dark;
+                left: -31px;
+                top: 0;
+            }
+        }
     }
     
 }

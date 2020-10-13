@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">|
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="header">
@@ -39,13 +40,13 @@
                     <span><br>квартир, домов, офисов <br>и других помещений </span>
                 </h1>
                 <ul class="hero__text">
-                    <li>Уборка от 350 тг/м2</li>
-                    <li>Выезжаем в течение часа</li>
-                    <li>Работаем 24/7</li>
-                    <li>Только безопасные средства уборки</li>
-                    <li>Гарантия сохранности имущества</li>
+                    <li class="hero__text-item">Уборка от 350 тг/м2</li>
+                    <li class="hero__text-item">Выезжаем в течение часа</li>
+                    <li class="hero__text-item">Работаем 24/7</li>
+                    <li class="hero__text-item">Только безопасные средства уборки</li>
+                    <li class="hero__text-item">Гарантия сохранности имущества</li>
                 </ul>
-                <div class="button">Заказать уборку</div>
+                <a href="#order__popup" class="button">Заказать уборку</a>
             </div>
         </section>
         <section class="consist">
@@ -127,23 +128,53 @@
         </section>
         <section class="about">
             <div class="container">
-               <ul class="section__text">
-                    <li class="section__title"> Проверенные клинеры
-                       <span><br>Все сотрудники проходят специальное обучение, имеют опыт работы от 3 лет</span>
-                    </li>
-                    <li class="section__title">Безопасные моющие средства
-                        <span><br>Работаем с использованием безопасных гипоаллергенных средств компании «Era Cleanetica ECO»</span>
-                    </li>
-                    <li class="section__title">Профессиональное оборудование
-                        <span><br>Используем в работе оборудование, которое позволяет производить бережную и эффективную уборку</span>
-                    </li>
-                    <li class="section__title">Гарантия качества
-                        <span><br>Гарантия качественной уборки и сохранности имущества – оплата после уборки</span>
-                    </li>
-                    <li class="section__title">Приезжаем в любое время
-                        <span><br>Работаем круглосуточно без выходных</span>
-                    </li>
-               </ul>
+               <div class="wrapper">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="../image/verified.svg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-info__title"> Проверенные клинеры</div>
+                            <div class="card-info__text">Все сотрудники проходят специальное обучение, имеют опыт работы от 3 лет</div>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="../image/protection.svg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-info__title"> Безопасные моющие средства</div>
+                            <div class="card-info__text">Работаем с использованием безопасных гипоаллергенных средств компании «Era Cleanetica ECO»</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="../image/medal.svg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-info__title"> Профессиональное оборудование</div>
+                            <div class="card-info__text">Используем в работе оборудование, которое позволяет производить бережную и эффективную уборку</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="../image/maintenance.svg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-info__title"> Гарантия качества</div>
+                            <div class="card-info__text">Гарантия качественной уборки и сохранности имущества – оплата после уборки</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="../image/24-hours.svg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-info__title"> Приезжаем в любое время</div>
+                            <div class="card-info__text">Работаем круглосуточно без выходных<div>
+                        </div>
+                    </div>
+               </div>
             </div>
         </section>
         <section class="types">
@@ -194,11 +225,26 @@
                         <div class="card-item__title">Заявка</div>
                     </div>
                     <div class="card-item">
+                        <div class="card-item__img">
+                            <img src="../image/group.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-item">
                         <div class="card-item__title">Расчет</div>
                         <p class="card-item__text">Мы предоставляем вам смету по стоимости уборки</p>
                     </div>
                     <div class="card-item">
+                        <div class="card-item__img">
+                            <img src="../image/group.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-item">
                         <div class="card-item__title">Уборка</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item__img">
+                            <img src="../image/group.svg" alt="">
+                        </div>
                     </div>
                     <div class="card-item">
                         <div class="card-item__title">Оплата</div>
@@ -211,28 +257,34 @@
             <div class="container">
                 <h2 class="section__title">Отзывы</h2>
                 <div class="row">
-                    <div class="card-item">
-                        <div class="card-item__title">Азамат</div>
-                        <p class="card-item__text">Усердный постоянный персонал. Организация работы четкая, к пожеланиям относятся очень внимательно, реагируют быстро. Офис быстро реагирует на запросы. Профессионально и доброжелательно. Очень комфортно работать с компанией. Рекомендую.</p>
+                    <div class="card">
+                        <div class="card-item">
+                            <div class="card-item__title">Азамат</div>
+                            <p class="card-item__text">Усердный постоянный персонал. Организация работы четкая, к пожеланиям относятся очень внимательно, реагируют быстро. Офис быстро реагирует на запросы. Профессионально и доброжелательно. Очень комфортно работать с компанией. Рекомендую.</p>
+                        </div>
                     </div>
-                    <div class="card-item">
-                        <div class="card-item__title">Татьяна</div>
-                        <p class="card-item__text">Хорошая компания в своём сегменте. Достойное обслуживание каждого клиента.Обратившись в данную компанию, будьте уверены что всё пройдёт на высшем уровне.</p>
+                    <div class="card">
+                        <div class="card-item">
+                            <div class="card-item__title">Татьяна</div>
+                            <p class="card-item__text">Хорошая компания в своём сегменте. Достойное обслуживание каждого клиента.Обратившись в данную компанию, будьте уверены что всё пройдёт на высшем уровне.</p>
+                        </div>
                     </div>
-                    <div class="card-item">
-                        <div class="card-item__title">Дулат</div>
-                        <p class="card-item__text">Буквально недавно заказал уборку квартиры, которую сдавал. Прежние жильцы так угваздали мне ее, но девочки из из клининга вернули ей жизнь. Пропал весь запах посторонний и стало не стыдно показывать квартиру новым жильцам. Спасибо</p>
+                    <div class="card">
+                        <div class="card-item">
+                            <div class="card-item__title">Дулат</div>
+                            <p class="card-item__text">Буквально недавно заказал уборку квартиры, которую сдавал. Прежние жильцы так угваздали мне ее, но девочки из из клининга вернули ей жизнь. Пропал весь запах посторонний и стало не стыдно показывать квартиру новым жильцам. Спасибо</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="discount">
             <div class="container">
-                <h2 class="section__title">
-                    <span></span>
-                </р>
+                <h2 class="section__title">При заказе генеральной уборки  
+                </h2>
+                <div class="section__text">химчистка мягкой мебели со скидкой <span>25%</span> </div>
                 <form action="" class="discount__form">
-                    <input type="text">
+                    <input class="discount__form-input" type="text" placeholder="Телефон">
                     <button class="button">Заказать уборку</button>
                 </form>
             </div>
@@ -242,11 +294,11 @@
                 <h2 class="section__title">Оформление заказа уборки</h2>
                 <div class="calc">
                     <div class="calc-choice">
-                        <div class="calc-choice__title">Вы выбрали</div>
+                        <div class="calc__title calc-choice__title">Вы выбрали</div>
                         <div class="calc-choice__row">
-                            <button class="button">Квартира</button>
-                            <button class="button">Дом</button>
-                            <button class="button">Офис</button>
+                            <input type="radio" name="apart-type" id="flat"><label for="flat" class="button">Квартира</label>
+                            <input type="radio" name="apart-type" id="house"><label for="house" class="button">Дом</label>
+                            <input type="radio" name="apart-type" id="office"><label for="office" class="button">Офис</label>
                         </div>
                         <div class="calc-choice__row">
                             <select name="" id="" class="button">
@@ -258,64 +310,101 @@
                             </select>
                         </div>
                         <div class="calc-choice__row">
-                            <button class="button">Стандартная уборка</button>
-                            <button class="button">Генеральная уборка</button>
-                            <button class="button">Уборка после ремонта</button>
+                            <input type="radio" name="cleaning-type" id="standart"><label for="standart" class="button">Стандартная уборка</label>
+                            <input type="radio" name="cleaning-type" id="general"><label for="general" class="button">Генеральная уборка</label>
+                            <input type="radio" name="cleaning-type" id="after-repairs"><label for="after-repairs" class="button">Уборка после ремонта</label>
                         </div>
                     </div>
                     <div class="calc-period">
-                        <div class="calc-period__row">Один раз</div>
-                        <div class="calc-period__row">Каждую неделю</div>
-                        <div class="calc-period__row">Каждые две недели</div>
+                        <div class="calc__title calc-period__title">Периодичность уборки</div>
+                        <div class="calc-period__row">
+                            <div class="calc-period__item">
+                                <div class="text">Один раз</div>
+                            </div>
+                            <div class="calc-period__item">
+                                <div class="text">Каждую неделю</div>
+                            </div>
+                            <div class="calc-period__item">
+                                <div class="text">Каждые две недели</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="calc-options">
-                        <div class="calc-options__item">
-                            <div class="icon">
-                                <img src="aqua-clean\image\window.svg" alt="">
+                        <div class="calc__title calc-options__title">Дополнительные услуги</div>
+                        <div class="wrapper">
+                            <div class="calc-options__item">
+                                <input type="checkbox" name="window" id="window">
+                                <label for="window" class="calc-options__label">
+                                    <div class="icon">
+                                        <img src="../image/window.svg" alt="">
+                                    </div>
+                                    <div class="text">Помыть окна</div>
+                                </label>
                             </div>
-                            <div class="text">Помыть окна</div>
-                        </div>
-                        <div class="calc-options__item">
-                            <div class="icon">
-                                <img src="aqua-clean\image\stained-glass-window.svg" alt="">
+
+                            <div class="calc-options__item">
+                                <input type="checkbox" name="glass-window" id="glass-window">
+                                <label for="glass-window" class="calc-options__label">
+                                    <div class="icon">
+                                        <img src="../image/stained-glass-window.svg" alt="">
+                                    </div>
+                                    <div class="text">Помыть витражи</div>
+                                </label>
                             </div>
-                            <div class="text">Помыть витражи</div>
-                        </div>
-                        <div class="calc-options__item">
-                            <div class="icon">
-                                <img src="aqua-clean\image\fridge.svg" alt="">
+                            <div class="calc-options__item">
+                                <input type="checkbox" name="fridge" id="fridge">
+                                <label for="fridge" class="calc-options__label">
+                                    <div class="icon">
+                                        <img src="../image/fridge.svg" alt="">
+                                    </div>
+                                    <div class="text">Помыть холодильник внутри</div>
+                                </label>
                             </div>
-                            <div class="text">Помыть холодильник внутри</div>
-                        </div>
-                        <div class="calc-options__item">
-                            <div class="icon">
-                                <img src="aqua-clean\image\oven-pngrepo-com.png" alt="">
+                            <div class="calc-options__item">
+                                <input type="checkbox" name="oven" id="oven">
+                                <label for="oven" class="calc-options__label">
+                                    <div class="icon">
+                                        <img src="../image/oven-pngrepo-com.svg" alt="">
+                                    </div>
+                                    <div class="text">Почистить печь внутри</div>
+                                </label>
                             </div>
-                            <div class="text">Почистить печь внутри</div>
-                        </div>
-                        <div class="calc-options__item">
-                            <div class="icon">
-                                <img src="aqua-clean\image\kitchen.svg" alt="">
+                            <div class="calc-options__item">
+                                <input type="checkbox" name="kitchen-cupboard" id="kitchen-cupboard">
+                                <label for="kitchen-cupboard" class="calc-options__label">
+                                    <div class="icon">
+                                        <img src="../image/outline.svg" alt="">
+                                    </div>
+                                    <div class="text">Убрать внутри кухонных шкафов</div>
+                                </label>
                             </div>
-                            <div class="text">Убрать внутри кухонных шкафов</div>
-                        </div>
-                        <div class="calc-options__item">
-                            <div class="icon">
-                                <img src="aqua-clean\image\7077078.png" alt="">
+                            <div class="calc-options__item">
+                                <input type="checkbox" name="cupboard" id="cupboard">
+                                <label for="cupboard" class="calc-options__label">
+                                    <div class="icon">
+                                        <img src="../image/7077078.svg" alt="">
+                                    </div>
+                                    <div class="text">Убрать внутри шкафов</div>
+                                </label>
                             </div>
-                            <div class="text">Убрать внутри шкафов</div>
-                        </div>
-                        <div class="calc-options__item">
-                            <div class="icon">
-                                <img src="aqua-clean\image\chandelier.svg" alt="">
+                            <div class="calc-options__item">
+                                <input type="checkbox" name="chandelier" id="chandelier">
+                                <label for="chandelier" class="calc-options__label">
+                                    <div class="icon">
+                                        <img src="../image/chandelier.svg" alt="">
+                                    </div>
+                                    <div class="text">Помыть люстру</div>
+                                </label>
                             </div>
-                            <div class="text">Помыть люстру</div>
-                        </div>
-                        <div class="calc-options__item">
-                            <div class="icon">
-                                <img src="aqua-clean\image\microwave-oven.svg" alt="">
+                            <div class="calc-options__item">
+                                <input type="checkbox" name="microwave-oven" id="microwave-oven">
+                                <label for="microwave-oven" class="calc-options__label">
+                                    <div class="icon">
+                                        <img src="../image/microwave-oven.svg" alt="">
+                                    </div>
+                                    <div class="text">Почистить внутри микроволновки</div>
+                                </label>
                             </div>
-                            <div class="text">Почистить внутри микроволновки</div>
                         </div>
                     </div>
                 </div>
