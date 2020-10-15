@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="header">
@@ -52,15 +54,17 @@
         <section class="consist">
             <div class="container">
                 <h2 class="section__title">Из чего складывается уборка</h2>
-                <div class="room">
-                    <input type="radio" name="room__item" id="corridor">
-                    <label for="corridor" class="room__item">Коридор</label>
-                    <input type="radio" name="room__item" id="kithen">
-                    <label for="kithen" class="room__item">Кухня</label>
-                    <input type="radio" name="room__item" id="bathroom">
-                    <label for="bathroom" class="room__item">Ванная</label>
-                    <input type="radio" name="room__item" id="bedroom">
-                    <label for="bedroom" class="room__item">Комната</label>
+                <div class="wrapper">
+                    <div class="room">
+                        <input type="radio" name="room__item" id="corridor">
+                        <label for="corridor" class="room__item">Коридор</label>
+                        <input type="radio" name="room__item" id="kithen">
+                        <label for="kithen" class="room__item">Кухня</label>
+                        <input type="radio" name="room__item" id="bathroom">
+                        <label for="bathroom" class="room__item">Ванная</label>
+                        <input type="radio" name="room__item" id="bedroom">
+                        <label for="bedroom" class="room__item">Комната</label>
+                    </div>
                 </div>
                 <div class="consist-slide">
                     <div class="slide-card">
@@ -433,5 +437,9 @@
         </div>
     </footer>
     
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

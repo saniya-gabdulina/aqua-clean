@@ -1,14 +1,304 @@
-@media only screen and (max-width : 1400px) {
+@media only screen and (max-width : 1540px) {
+    .section__title {
+        font-size: 32px;
+    }
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        padding-bottom: 80px;
+        margin-top: 80px;
+    }
+    .header {
+        .container {
+            margin-top: 30px;
+        }
+        .nav__link {
+            font-size: 20px;
+        }
+    }
     .hero {
+        &__title {
+            font-size: 44px;
+            padding-top: 44px;
+        }
+        &__text {
+            font-size: 24px;
+        }
         .container {
             margin-top: 60px;
 
         }
         .button {
             width: 250px;
+            font-size: 20px;
+            margin-top: 60px;
+        }
+    }
+    .consist {
+        .room__item {
+            font-size: 20px;
+        }
+        &-slide__text {
+            font-size: 20px;
+        }
+        img {
+            max-width: 700px;
+            width: 100%;
+        }
+    }
+    .about {
+        .card {
+            padding-bottom: 45px;
+            &-info {
+                &__title {
+                    font-size: 22px;
+                }
+                &__text {
+                    font-size: 18px;
+                }
+            }
+            img {
+                width: 70px;
+            }
+        }
+    }
+    .types {
+        .row {
+            .card {
+                &-item {
+                    &__title {
+                        font-size: 20px;
+                    }
+                    &__price {
+                        font-size: 16px;
+                    }
+                }
+                .button {
+                    font-size: 16px;
+                    width: 160px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+    .hww {
+        .card-item {
+            &__title {
+                font-size: 22px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+        }
+    }
+    .footer { 
+        .row {
+            font-size: 16px;
         }
     }
 }
-// @media only screen and (max-width : 991px) {}
+ 
+@media only screen and (max-width : 1280px) {
+    .container {
+        max-width: 1000px;
+        width: 100%;
+    }
+    .header {
+        .nav__list {
+            padding-inline-start: 0;
+        }
+    }
+}
+@media only screen and (max-width : 1024px) {
+    .container {
+        max-width: 900px;
+        width: 100%;
+    }
+    .section__title {
+        font-size: 28px;
+        margin-top: 70px;
+    }
+    .header {
+        .nav {
+            &__link {
+                font-size: 18px;
+            }
+        }
+    }
+    .hero {
+        &__title {
+            font-size: 40px;
+            span {
+                font-size: 38px;
+            }
+        }
+        &__text {
+            font-size: 20px;
+        }
+        .button {
+            width: 200px;
+            height: 54px;
+            font-size: 16px;
+        }
+    }
+    .consist {
+        &-slide{
+            &__text {
+                font-size: 18px;
+                li {
+                    &::before {
+                        width: 20px;
+                        height: 20px;
+                        top: 2px;
+                        left: -26px;
+                    }
+                
+                }
+            }
+        }
+    }
+    .about {
+        .card-info {
+            &__title {
+                font-size: 20px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+        }
+    }
+    .types {
+        .row {
+            padding-bottom: 30px;
+            .card {
+                max-width: 260px;
+                width: 100%;
+                height: 340px;
+                &-item {
+                    &__title {
+                        font-size: 18px;
+                        margin-top: 23px;
+                    }
+                    &__text {
+                        font-size: 13px;
+                        margin-top: 18px;
+                    }
+                    &__info {
+                        font-size: 13px;
+                    }
+                }
+                .button {
+                    font-size: 14px;
+                    width: 150px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+    .hww {
+        .card {
+            &-item {
+                img {
+                    width: 26px;
+                }
+                &__title {
+                    font-size: 20px;
+                }
+                &__text {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .reviews {
+        .row {
+            padding-bottom: 30px;
+            .card {
+                max-width: 288px;
+                width: 100%;
+                &-item {
+                    &_title {
+                        font-size: 16px;
+                    }
+                    &__text {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .discount {
+        .section {
+            &__title {
+                font-size: 28px;
+            }
+            &__text {
+                font-size: 20px;
+                span {
+                    font-size: 28px;
+                }
+            }
+        }
+        &__form {
+            max-width: 270px;
+            .button {
+                font-size: 16px;
+            }
+        }
+    }
+    .regis {
+        .section__title {
+            margin-bottom: 40px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .calc {
+            &__title {
+                font-size: 22px;
+            }
+            &-choice {
+                &__row {
+                    .button {
+                        font-size: 15px;
+                        max-width: 200px;
+                        padding: 0;
+                    }
+                }
+            }
+            &-period {
+                &__row {
+                    font-size: 16px;
+                }
+            }
+            &-options{
+                &__item {
+                    height: 178px;
+                    .icon {
+                        width: 125px;
+                        height: 125px;
+                        img {
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+@media only screen and (max-width : 991px) {
+    .container {
+        max-width: 700px;
+        width: 100%;
+    }
+    
+
+}
+
 // @media only screen and (max-width : 768px) {}
 // @media only screen and (max-width : 480px) {}

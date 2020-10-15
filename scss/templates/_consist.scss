@@ -1,34 +1,40 @@
 .consist {
-    .room {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        max-width: 790px;
-        margin: 0 auto;
-        margin-bottom: 41px;
-        font-size: 24px;
-        &__item {
-            color: $dark;
-            padding: 5px 30px;
-        }
-        input {
-            display: none;
-            &:checked+label {
-                border-radius: 55px;
-                border: 2px solid $firstyellow;
-                cursor: pointer;
-                transition: .15s;
-                font-weight: 700;
+    .wrapper {
+        height: 47px;
+        margin-bottom: 30px;
+        .room {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 790px;
+            margin: 0 auto;
+            font-size: 24px;
+            &__item {
+                color: $dark;
+                padding: 5px 30px;
+            }
+            input {
+                display: none;
+                &:checked+label {
+                    border-radius: 55px;
+                    border: 2px solid $firstyellow;
+                    cursor: pointer;
+                    transition: .15s;
+                    font-weight: 700;
+                }
             }
         }
     }
     &-slide__text {
         font-size: 24px;
         font-weight: 600;
-        line-height: 140%;
+        line-height: 160%;
         max-width: 451px;
         width: 100%;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         li {
             position: relative;
             display: block;

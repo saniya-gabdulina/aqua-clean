@@ -7,11 +7,11 @@
         &__title {
             font-size: 24px;
             font-weight: 700;
-            padding: 50px 0;
+            padding: 50px 0 30px;
         }
         &-choice {
             &__row {
-                padding-bottom: 30px;
+                padding-bottom: 20px;
                 .button {
                     display: inline-flex;
                     justify-content: center;
@@ -23,12 +23,12 @@
                     border: 3px solid $firstyellow;
                     background: $light;
                     font-size: 18px;
+                    font-weight: 500;
                     margin-right: 5px;
                     padding: 0 7px;
                     box-sizing: border-box;
                     cursor: pointer;
                     transition: .15s;
-                   
                 }
                 input {
                     display: none;

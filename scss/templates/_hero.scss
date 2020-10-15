@@ -3,7 +3,6 @@
     display: block;
     background: url(../image/bg-main.jpg) no-repeat ;
     background-size: cover;
-    // background-position: calc(50% - -23px) 72%;
     min-height: 100vh;
     padding-top: 100px;
     &__title {
@@ -13,7 +12,7 @@
         color: $secondyellow;
         span {
             color: $light;
-            font-weight: normal;
+            font-weight: 600;
         }
     }
     &__text {
