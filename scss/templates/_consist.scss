@@ -1,5 +1,5 @@
 .consist {
-    .section__text {
+    .room {
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -7,19 +7,33 @@
         margin: 0 auto;
         margin-bottom: 41px;
         font-size: 24px;
-    }
-    a {
-        text-decoration: none;
-        color: $dark;
+        &__item {
+            color: $dark;
+            padding: 5px 30px;
+        }
+        input {
+            display: none;
+            &:checked+label {
+                border-radius: 55px;
+                border: 2px solid $firstyellow;
+                cursor: pointer;
+                transition: .15s;
+                font-weight: 700;
+            }
+        }
     }
     &-slide__text {
         font-size: 24px;
         font-weight: 600;
         line-height: 140%;
+        max-width: 451px;
+        width: 100%;
+        margin: 0 auto;
         li {
             position: relative;
             display: block;
             list-style-type: none;
+            
             &::before {
                 position: absolute;
                 display: block;
@@ -33,6 +47,16 @@
                 top: 0;
             }
         }
+    }
+    img {
+        max-width: 741px;
+        width: 100%;
+        border-radius: 18px;
+    }
+    .slide-card {
+        max-width: 1280px;
+        width: 100%;
+        display: flex;
     }
     
 }

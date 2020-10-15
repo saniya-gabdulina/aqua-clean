@@ -1,13 +1,8 @@
 .reviews {
     display: block;
-    .section__title {
-        // margin-top: 100px;
-    }
     .row {
         display: flex;
         justify-content: space-between;
-        // margin-top: 100px;
-        padding-bottom: 100px;
         .card {
             border: 3px solid $firstyellow;
             border-radius: 18px;
@@ -30,7 +25,6 @@
                 &__text {
                     line-height: 200%;
                     font-size: 14px;
-                    // font-weight: 600;
                 }
                 
             }

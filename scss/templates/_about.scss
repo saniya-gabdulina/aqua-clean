@@ -2,13 +2,12 @@
     position: relative;
     display: block;
     background: $lightblue;
-    // padding-top: 20px;
-    .container {
-        
-    }
     .card {
         display: flex;
         padding-bottom: 65px;
+        &:last-child {
+            padding-bottom: 0;
+        }
         &-info {
             margin-left: 60px;
             &__title {
