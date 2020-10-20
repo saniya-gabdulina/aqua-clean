@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="/css/magnific-popup.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -56,20 +58,20 @@
                 <h2 class="section__title">Из чего складывается уборка</h2>
                 <div class="wrapper">
                     <div class="room">
-                        <input type="radio" name="room__item" id="corridor">
-                        <label for="corridor" class="room__item">Коридор</label>
+                        <input type="radio" name="room__item" checked id="corridor">
+                        <label for="corridor" data-target="0" class="room__item">Коридор</label>
                         <input type="radio" name="room__item" id="kithen">
-                        <label for="kithen" class="room__item">Кухня</label>
+                        <label for="kithen" data-target="1" class="room__item">Кухня</label>
                         <input type="radio" name="room__item" id="bathroom">
-                        <label for="bathroom" class="room__item">Ванная</label>
+                        <label for="bathroom" data-target="2" class="room__item">Ванная</label>
                         <input type="radio" name="room__item" id="bedroom">
-                        <label for="bedroom" class="room__item">Комната</label>
+                        <label for="bedroom" data-target="3" class="room__item">Комната</label>
                     </div>
                 </div>
                 <div class="consist-slide">
                     <div class="slide-card">
                         <div class="consist-slide__img">
-                            <img src="image\коридор (1).jpg" alt="">
+                            <img src="image\corridor.jpg" alt="">
                         </div>
                         <ul class="consist-slide__text">
                             <li>Протираем светильники и фасады шкафов, входную дверь</li>
@@ -81,7 +83,7 @@
                     </div>
                     <div class="slide-card">
                         <div class="consist-slide__img">
-                            <img src="image\кухня.jpg" alt="">
+                            <img src="image\kitchen.jpg" alt="">
                         </div>
                         <ul class="consist-slide__text">
                             <li>Делаем влажную уборку фасадов шкафов</li>
@@ -94,7 +96,7 @@
                     </div>
                     <div class="slide-card">
                         <div class="consist-slide__img">
-                            <img src="image\ванная.jpg" alt="">
+                            <img src="image\bathroom.jpg" alt="">
                         </div>
                         <ul class="consist-slide__text">
                             <li>Моем кафельную плитку</li>
@@ -108,7 +110,7 @@
                     </div>
                     <div class="slide-card">
                         <div class="consist-slide__img">
-                            <img src="image\спальня.jpg" alt="">
+                            <img src="image\badroom.jpg" alt="">
                         </div>
                         <ul class="consist-slide__text">
                             <li>Очищаем ручки межкомнатных дверей, розетки, провода и выключатели</li>
@@ -186,10 +188,13 @@
                             <div class="card-item__title">Поддерживающая</div>
                             <div class="card-item__info">
                                 <p class="card-item__text">Еженедельная уборка для поддержания частоты</p>
-                            <a href="">Что входит в стоимость</a>
-                        </div>
-                        <div class="card-item__price">Цена от 350 тг/м2</div>
-                        <button class="button">Заказать</button>
+                                <a href="#types__modal-standart" class="popup-modal__button">Что входит в стоимость</a>
+                            </div>
+                            <div class="card-item__price">Цена от 350 тг/м2</div>
+                            <div class="card-item__button">
+                                <a class="button popup-modal__button" href="#types-popup-modal">Заказать</a>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="card">
@@ -197,10 +202,12 @@
                             <div class="card-item__title">Генеральная</div>
                             <p class="card-item__text">Тщательная уборка всех поверхностей и труднодоступных мест с использованием необходимой химии и инвентаря</p>
                             <div class="card-item__info">
-                                <a href="">Что входит в стоимость</a>
+                                <a href="#types__modal-general" class="popup-modal__button">Что входит в стоимость</a>
                             </div>
                             <div class="card-item__price">Цена от 500 тг/м2</div>
-                            <button class="button">Заказать</button>
+                            <div class="card-item__button">
+                                <a class="button popup-modal__button" href="#types-popup-modal">Заказать</a>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -208,10 +215,12 @@
                             <div class="card-item__title">После Ремонта</div>
                             <p class="card-item__text">Уборка и полное обеспыливание после ремонта любого масштаба. Вынос строительной пыли и материалов.</p>
                             <div class="card-item__info">
-                                <a href="">Что входит в стоимость</a>
+                                <a href="#types__modal-afterRepair" class="popup-modal__button">Что входит в стоимость</a>
                             </div>
                             <div class="card-item__price">Цена от 500 тг/м2</div>
-                            <button class="button">Заказать</button>
+                            <div class="card-item__button">
+                                <a class="button popup-modal__button" href="#types-popup-modal">Заказать</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -304,7 +313,7 @@
                             <label for="office" class="button">Офис</label>
                         </div>
                         <div class="calc-choice__row">
-                            <select name="" id="" class="button">
+                            <select name="rooms" id="rooms" class="button">
                                 <option value="">1 комнатная</option>
                                 <option value="">2 комнатная</option>
                                 <option value="">3 комнатная</option>
@@ -414,7 +423,23 @@
                 <div class="sidebar">
                     <div class="order">
                         <h2 class="title">Ваш заказ</h2>
-
+                        <div class="wrapper">
+                            <div class="apart-type">Офис</div>
+                            <div class="number">2 комнатная</div>
+                            <div class="type">Генеральная уборка</div>
+                            <div class="period">Один раз</div>
+                            <hr>
+                        </div>
+                        <div class="wrapper">
+                            <div class="options">
+                                <span>Доп. опции не выбраны :</span>
+                                <button class="options__button">Выбрать</button>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="price-title">К оплате : <span>9000тг</span></div>
+                        </div>
+                        <button class="order__button">Заказать уборку</button>
                     </div>
                 </div>
             </div>
@@ -436,9 +461,46 @@
             <div class="row">© Aqua-чисто 2020 - Все права защищены, частичное и полное копирование сайта запрещено.</div>
         </div>
     </footer>
+    <!-- модальное окно для звонка -->
+    <div class="modal mfp-hide" id="types-popup-modal">
+        <div class="modal__dialog">
+            <a class="popup-modal-dismiss" href="#">
+                <img src="../image/cancel.svg" alt="">
+            </a>
+            <h4 class="modal__title">Заказать уборку</h4>
+            <form action="/" method="POST" class="modal__form">
+                <input class="modal__input" type="text" name="userName" id="userName__modal" placeholder="Имя">
+                <input class="modal__input" type="text" name="userPhone" id="userPhone__modal" placeholder="Телефон">
+                <button class="modal__button">Заказать</button>
+            </form>
+        </div>
+    </div>
+    <!-- модальное окно для types с подробным -->
+    <div class="types__modal-standart mfp-hide" id="types__modal-standart">
+        <h3 class="title">Поддерживающая</h3>
+        <ul class="type-list">
+        </ul>        
+        </div>
+    </div>
+    <div class="types__modal-standart mfp-hide" id="types__modal-general">
+        <h3 class="title">Генеральная</h3>
+        <ul class="type-list">
+        </ul>        
+        </div>
+    </div>
+    <div class="types__modal-standart mfp-hide" id="types__modal-afterRepair">
+        <h3 class="title">После ремонта</h3>
+        <ul class="type-list">
+        </ul>        
+        </div>
+    </div>
     
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.magnific-popup.js"></script>
+    
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>

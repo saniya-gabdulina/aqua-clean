@@ -38,17 +38,28 @@
                     font-weight: 700;
                     margin-bottom: 25px;
                 }
-            }
-            .button {
-                text-transform: uppercase;
-                font-size: 18px;
-                font-weight: 900;
-                width: 172px;
-                height: 52px;
-                border-radius: 18px;
-                background: $firstyellow;
-                border: none;
-                
+                &__button {
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: 900;
+                    width: 172px;
+                    height: 52px;
+                    border-radius: 18px;
+                    background: $firstyellow;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    a {
+                        text-decoration: none;
+                        color: $dark;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+               
             }
         }
     }

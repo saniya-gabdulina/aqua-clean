@@ -10,18 +10,27 @@
             margin: 0 auto;
             font-size: 24px;
             &__item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 color: $dark;
+                min-width: 162px;
                 padding: 5px 30px;
+                border: 2px solid transparent;
+                box-sizing: border-box;
             }
             input {
                 display: none;
                 &:checked+label {
                     border-radius: 55px;
                     border: 2px solid $firstyellow;
-                    cursor: pointer;
                     transition: .15s;
                     font-weight: 700;
                 }
+            }
+            label {
+                cursor: pointer;
+
             }
         }
     }
