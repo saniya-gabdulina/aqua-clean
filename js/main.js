@@ -109,4 +109,26 @@ $(document).ready(function () {
       .querySelector("#types__modal-afterRepair .type-list")
       .appendChild(typeLIstItem);
   });
+
+  // попап с подробным types окно
+  $(".popup-modal__button").magnificPopup({
+    type: "inline",
+    preloader: false,
+    modal: true,
+  });
+  $(document).on("click", ".popup-modal-dismiss", function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+
+  //types slider
+  $('.types-slider').slick({
+    dots: false,
+		arrows: true,
+		infinite: false,
+		speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  });
+
 });

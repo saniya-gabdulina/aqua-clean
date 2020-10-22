@@ -595,6 +595,63 @@ input {
             justify-content: center;
             display: flex;
             align-items: center; }
+  .types-slide {
+    max-width: 400px;
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    margin: 0 auto; }
+  .types__modal-standart {
+    display: block;
+    margin: 0 auto;
+    background: #ffffff;
+    max-width: 617px;
+    width: 100%;
+    border-radius: 18px;
+    padding: 15px;
+    box-sizing: border-box; }
+    .types__modal-standart a {
+      position: absolute;
+      right: 474px;
+      top: 19px; }
+      .types__modal-standart a img {
+        width: 18px;
+        height: 18px; }
+    .types__modal-standart .title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700; }
+    .types__modal-standart .type-list {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 160%; }
+      .types__modal-standart .type-list__item {
+        list-style: none;
+        position: relative; }
+        .types__modal-standart .type-list__item::before {
+          position: absolute;
+          display: block;
+          content: '';
+          background: url(../image/cheked.svg) no-repeat;
+          background-size: contain;
+          width: 16px;
+          height: 16px;
+          left: -24px; }
+    .types__modal-standart .wrapper {
+      display: flex;
+      justify-content: flex-start;
+      padding: 5px 15px 25px; }
+      .types__modal-standart .wrapper__item {
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+        font-size: 14px; }
+        .types__modal-standart .wrapper__item__title {
+          font-weight: 600; }
+        .types__modal-standart .wrapper__item__text {
+          font-weight: 500; }
+  .types .popup-modal__button {
+    outline: none; }
 
 .hww {
   position: relative;
@@ -829,7 +886,8 @@ input {
       border: none;
       box-shadow: -6px 4px 11px rgba(0, 0, 0, 0.25);
       cursor: pointer;
-      transition: .15s; }
+      transition: .15s;
+      margin-top: 80px; }
 
 .footer {
   background: #232D32; }
@@ -846,7 +904,7 @@ input {
       justify-content: space-between;
       padding: 61px 0 0; }
     .footer .row:nth-child(2n) {
-      padding: 160px 0 40px; }
+      padding: 80px 0 40px; }
 
 .modal {
   max-width: 399px;
@@ -948,7 +1006,7 @@ input {
   .hww .card-item__text {
     font-size: 16px; }
   .footer .row {
-    font-size: 16px; } }
+    font-size: 15px; } }
 
 @media only screen and (max-width: 1280px) {
   .container {
@@ -1051,9 +1109,30 @@ input {
       height: 125px; }
       .regis .calc-options__item .icon img {
         width: 70px;
-        height: 70px; } }
+        height: 70px; }
+  .regis .sidebar .order .wrapper {
+    font-size: 16px; }
+    .regis .sidebar .order .wrapper .price-title {
+      font-size: 22px; }
+  .regis .sidebar .order__button {
+    max-width: 285px;
+    width: 100%;
+    height: 50px;
+    font-size: 15px; } }
 
 @media only screen and (max-width: 991px) {
   .container {
     max-width: 700px;
-    width: 100%; } }
+    width: 100%; }
+  .header .container {
+    padding-bottom: 0; }
+  .hero__title {
+    padding-top: 0; }
+  .hero .button {
+    margin-top: 40px;
+    width: 180px;
+    height: 50px;
+    font-size: 15px; }
+  .consist .slide-card {
+    display: flex;
+    flex-direction: column; } }
