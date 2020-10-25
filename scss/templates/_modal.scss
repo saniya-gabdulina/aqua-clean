@@ -16,7 +16,7 @@
         font-weight: 900;
         color: $blue;
         text-align: center;
-
+        padding-top: 31px;
     }
     &__input {
         max-width: 285px;
@@ -47,9 +47,14 @@
         margin-top: 35px;
     }
     &__dialog {
+        position: relative;
+        display: block;
         a { 
-            position: relative;
-            left: 366px;
+            position: absolute;
+            display: block;
+            width: 18px;
+            height: 18px;
+            right: 14px;
             top: 14px;
             img {
                 width: 18px;

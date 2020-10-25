@@ -28,6 +28,7 @@
                 position: absolute;
                 content: '';
                 background: url(../image/cheked-light.svg) no-repeat;
+                background-size: contain;
                 color: $light;
                 width: 25px;
                 height: 25px;

@@ -230,8 +230,9 @@
                             </div>
                         </div>
                     </div>
-                    </div>
+                    <!-- types-slider -->
                 </div>
+                <!-- row -->
             </div>
         </section>
         <section class="hww">
@@ -274,25 +275,35 @@
             <div class="container">
                 <h2 class="section__title">Отзывы</h2>
                 <div class="row">
-                    <div class="card">
-                        <div class="card-item">
-                            <div class="card-item__title">Азамат</div>
-                            <p class="card-item__text">Усердный постоянный персонал. Организация работы четкая, к пожеланиям относятся очень внимательно, реагируют быстро. Офис быстро реагирует на запросы. Профессионально и доброжелательно. Очень комфортно работать с компанией. Рекомендую.</p>
+                    <div class="reviews-slider">
+                        <div class="reviews-slide">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-item__title">Азамат</div>
+                                    <p class="card-item__text">Усердный постоянный персонал. Организация работы четкая, к пожеланиям относятся очень внимательно, реагируют быстро. Офис быстро реагирует на запросы. Профессионально и доброжелательно. Очень комфортно работать с компанией. Рекомендую.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-slide">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-item__title">Татьяна</div>
+                                    <p class="card-item__text">Хорошая компания в своём сегменте. Достойное обслуживание каждого клиента.Обратившись в данную компанию, будьте уверены что всё пройдёт на высшем уровне.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-slide">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-item__title">Дулат</div>
+                                    <p class="card-item__text">Буквально недавно заказал уборку квартиры, которую сдавал. Прежние жильцы так угваздали мне ее, но девочки из из клининга вернули ей жизнь. Пропал весь запах посторонний и стало не стыдно показывать квартиру новым жильцам. Спасибо</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-item">
-                            <div class="card-item__title">Татьяна</div>
-                            <p class="card-item__text">Хорошая компания в своём сегменте. Достойное обслуживание каждого клиента.Обратившись в данную компанию, будьте уверены что всё пройдёт на высшем уровне.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-item">
-                            <div class="card-item__title">Дулат</div>
-                            <p class="card-item__text">Буквально недавно заказал уборку квартиры, которую сдавал. Прежние жильцы так угваздали мне ее, но девочки из из клининга вернули ей жизнь. Пропал весь запах посторонний и стало не стыдно показывать квартиру новым жильцам. Спасибо</p>
-                        </div>
-                    </div>
+                    <!-- reviews-slider -->
                 </div>
+                <!-- row -->
             </div>
         </section>
         <section class="discount">
@@ -301,7 +312,7 @@
                 </h2>
                 <div class="section__text">химчистка мягкой мебели со скидкой <span>25%</span> </div>
                 <form action="" class="discount__form">
-                    <input class="discount__form-input" type="text" placeholder="Телефон">
+                    <input class="discount__form-input" type="text" name="userPhone" placeholder="Телефон">
                     <button class="button">Заказать уборку</button>
                 </form>
             </div>
@@ -349,8 +360,8 @@
                             <label for="every-two-weeks" class="calc-period__item">Каждые две недели</label>
                         </div>
                     </div>
-                    <div class="calc-options">
-                        <div class="calc__title calc-options__title">Дополнительные услуги</div>
+                    <div class="calc-options" >
+                        <div class="calc__title calc-options__title" id="options">Дополнительные услуги</div>
                         <div class="wrapper">
                             <div class="calc-options__item">
                                 <input type="checkbox" name="window" id="window">
@@ -441,7 +452,7 @@
                         <div class="wrapper">
                             <div class="options">
                                 <span>Доп. опции не выбраны :</span>
-                                <button class="options__button">Выбрать</button>
+                                <a class="options__button" href="#options">Выбрать</a>
                             </div>
                         </div>
                         <div class="wrapper">
@@ -478,7 +489,7 @@
             <h4 class="modal__title">Заказать уборку</h4>
             <form action="/" method="POST" class="modal__form">
                 <input class="modal__input" type="text" name="userName" id="userName__modal" placeholder="Имя">
-                <input class="modal__input" type="text" name="userPhone" id="userPhone__modal" placeholder="Телефон">
+                <input class="modal__input" type="tel" name="userPhone" id="userPhone__modal" placeholder="Телефон">
                 <button class="modal__button">Заказать</button>
             </form>
         </div>

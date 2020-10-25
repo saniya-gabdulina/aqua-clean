@@ -10,6 +10,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: false,
     swipe: false,
+    adaptiveHeight: true
   });
 
   $(".room__item").click(function () {
@@ -122,13 +123,70 @@ $(document).ready(function () {
   });
 
   //types slider
-  $('.types-slider').slick({
+  $(".types-slider").slick({
     dots: false,
-		arrows: true,
-		infinite: false,
-		speed: 300,
+    arrows: false,
+    infinite: false,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          dots: true,
+          slidesToShow: 2
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          slidesToShow: 1
+        },
+      },
+    ],
+  });
+  //reviews slider
+  $(".reviews-slider").slick({
+    dots: false,
+    arrows: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          dots: true,
+          slidesToShow: 2
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          slidesToShow: 1
+        },
+      },
+    ],
   });
 
+  $('.discount__form').validate ({
+    errorClass: "invalid" ,
+    rules: {
+      userPhone: {
+        required: true,
+          minlength: 17,
+          maxlength: 17
+      }
+    },
+    messages: {
+      userPhone: {
+        required: "Укажите номер" 
+      }
+    }
+  })
+  
 });
